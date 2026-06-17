@@ -49,7 +49,7 @@ export function Nav() {
             {/* Hamburger Icon */}
             <button
               onClick={toggleMenu}
-              className="rounded-full p-2 text-foreground/85 md:hidden hover:bg-black/5 hover:text-foreground transition-colors"
+              className="rounded-full p-2 ml-auto mr-0 text-foreground/85 md:hidden hover:bg-black/5 hover:text-foreground transition-colors"
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

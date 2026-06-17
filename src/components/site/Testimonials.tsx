@@ -112,7 +112,7 @@ export function Testimonials() {
               {googleReviews.map((r, idx) => (
                 <div
                   key={idx}
-                  className="w-full min-w-full snap-start rounded-xl border border-border/50 bg-cream/30 p-5 flex flex-col justify-between"
+                  className="w-full min-w-full snap-start rounded-xl border border-border/50 bg-cream/30 p-5 flex flex-col justify-between max-h-[220px] md:max-h-none overflow-hidden"
                 >
                   <div>
                     {/* Reviewer top info */}
@@ -132,7 +132,7 @@ export function Testimonials() {
                     </div>
 
                     {/* Review Text */}
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground italic">
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground italic line-clamp-2 md:line-clamp-none">
                       "{r.text}"
                     </p>
                   </div>

@@ -3,9 +3,11 @@ import d2 from "@/assets/doctor2.jpg";
 import d3 from "@/assets/doctor3.jpg";
 
 const team = [
-  { img: d1, name: "Dr. Anjali Sharma", role: "Senior Dentist · BDS, MDS" },
-  { img: d2, name: "Dr. Karan Mehta", role: "Implantologist · BDS" },
-  { img: d3, name: "Dr. Neha Verma", role: "Cosmetic Dentist · BDS" },
+  { img: d2, name: "Dr. Sunil Rulaniya", role: "MBBS, MD (Consultant Physician)" },
+  { img: d2, name: "Dr. Naveen Kumar", role: "BDS, MDS (Orthodontics)" },
+  { img: d3, name: "Dr. Poonam Jakhar", role: "BDS" },
+  { img: d1, name: "Dr. Aishwarya", role: "BDS" },
+  { img: d2, name: "Dr. Pawan K Jangir", role: "BDS" },
 ];
 
 export function Doctors() {
@@ -21,9 +23,9 @@ export function Doctors() {
             A small, dedicated team of professional doctors who combine modern technique with genuine warmth.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <div className="mt-12 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin">
           {team.map((d) => (
-            <div key={d.name} className="overflow-hidden rounded-2xl bg-white shadow-sm">
+            <div key={d.name} className="min-w-[280px] w-[280px] snap-start overflow-hidden rounded-2xl bg-white shadow-sm shrink-0">
               <img src={d.img} alt={d.name} loading="lazy" width={640} height={800} className="h-80 w-full object-cover" />
               <div className="p-6">
                 <h3 className="font-serif text-xl">{d.name}</h3>
