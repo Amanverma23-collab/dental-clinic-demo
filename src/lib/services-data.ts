@@ -13,7 +13,7 @@ export type Service = {
   title: string;
   tagline: string;
   image: string;
-  intro: string;
+  intro: string[];
   highlights: { title: string; body: string }[];
   procedure: string[];
   benefits: string[];
@@ -28,8 +28,11 @@ export const services: Service[] = [
     title: "Cosmetic Dentistry",
     tagline: "Custom smile makeovers tailored to your face & personality.",
     image: cosmetic,
-    intro:
-      "Our cosmetic dentistry program in Sikar combines digital smile design, high-grade ceramics, and an artist's eye to give you a smile that looks naturally yours — only better.",
+    intro: [
+      "Our cosmetic dentistry program in Sikar combines digital smile design, high-grade ceramics, and an artist's eye to give you a smile that looks naturally yours — only better. We understand that a smile is a key part of your identity, which is why we customize every treatment plan to align perfectly with your facial features, skin tone, and personal expression.",
+      "Whether you are looking to fix small chips, close gaps, or completely redesign your smile, our modern solutions are minimally invasive and highly aesthetic. We utilize state-of-the-art materials like e.max veneers, zirconium crowns, and advanced bonding techniques to deliver durable, beautiful results.",
+      "At Dr. Dental Sikar, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
+    ],
     highlights: [
       { title: "Digital Smile Design", body: "See a 3D preview of your new smile before any treatment begins." },
       { title: "Tooth-Coloured Materials", body: "Premium composites and ceramics that blend seamlessly with natural enamel." },
@@ -60,8 +63,11 @@ export const services: Service[] = [
     title: "Teeth Whitening",
     tagline: "Professional in-chair whitening for a brighter, glowing smile.",
     image: whitening,
-    intro:
-      "Stains from tea, coffee, tobacco and time can dull your smile. Our supervised whitening lifts shades safely in a single visit — without harming enamel.",
+    intro: [
+      "Stains from tea, coffee, tobacco, and natural aging can dull your smile over time. Our professional in-office whitening treatments lift stubborn discoloration safely and quickly in a single visit, without harming your tooth enamel or causing severe sensitivity.",
+      "We use advanced LED-activated whitening gels that break down deep stains at a molecular level, giving you results that are far superior to over-the-counter products. During the procedure, your gums are fully protected with a specialized barrier, and we apply a soothing desensitizing agent afterward for maximum comfort.",
+      "In addition to the in-chair session, we provide customized follow-up tips and optional home-maintenance kits to keep your smile bright and glowing for a long time. With basic hygiene and care, your new radiant smile can last for over a year."
+    ],
     highlights: [
       { title: "In-Chair LED Whitening", body: "Up to 6 shades lighter in about 60 minutes." },
       { title: "Take-Home Kits", body: "Custom trays and dentist-grade gel for top-up whitening at home." },
@@ -90,8 +96,11 @@ export const services: Service[] = [
     title: "Dental Implants",
     tagline: "Permanent, natural-looking replacements for missing teeth.",
     image: implant,
-    intro:
-      "Dental implants restore the look, feel and full function of your natural teeth. We use globally trusted implant systems with a long-term clinical track record.",
+    intro: [
+      "Dental implants restore the look, feel, and full functionality of your natural teeth. Whether you've lost teeth due to decay, injury, or age, implants provide a permanent, non-removable solution that feels completely natural and prevents bone loss in the jaw.",
+      "We use globally trusted implant systems with a long-term clinical track record, combined with computer-guided surgical planning for maximum precision. The implant post acts as a new tooth root, fusing directly with your jawbone to create an exceptionally strong foundation.",
+      "Once the healing process is complete, we attach a custom-crafted ceramic crown that matches your neighboring teeth perfectly. This allows you to eat, speak, and smile with absolute confidence, without the worry of loose dentures or damaging surrounding teeth."
+    ],
     highlights: [
       { title: "Titanium-Grade Implants", body: "Biocompatible posts that fuse with your jaw bone." },
       { title: "Single-Day Procedure", body: "Most implant placements are completed in one comfortable visit." },
@@ -120,8 +129,11 @@ export const services: Service[] = [
     title: "Invisalign & Clear Aligners",
     tagline: "Straighten your teeth invisibly — no metal braces.",
     image: invisalign,
-    intro:
-      "Clear aligners gently move teeth into position using a series of custom-printed trays. They're removable, virtually invisible, and ideal for teens and adults.",
+    intro: [
+      "Clear aligners gently move teeth into their ideal position using a series of custom-printed, medical-grade plastic trays. They are virtually invisible, comfortable, and can be removed easily when eating, brushing, or attending special events.",
+      "Using advanced 3D scanning technology, we create a precise digital model of your mouth. We then simulate the entire movement of your teeth, allowing you to see a step-by-step preview of your journey and your final smile before the treatment even begins.",
+      "Unlike traditional metal braces, clear aligners have no sharp wires or brackets, minimizing oral irritation. It is the perfect choice for busy teens and professionals in Sikar who want to enhance their smile discreetly and comfortably."
+    ],
     highlights: [
       { title: "Removable Trays", body: "Take them out to eat, brush, and on special occasions." },
       { title: "Predictable Results", body: "See your final smile in a 3D simulation before you begin." },
@@ -150,8 +162,11 @@ export const services: Service[] = [
     title: "Root Canal Treatment",
     tagline: "Save your natural tooth — painlessly, often in a single visit.",
     image: rootcanal,
-    intro:
-      "Modern root canal therapy is nothing like its reputation. With rotary endodontics and magnification, we relieve pain and save your tooth in comfort.",
+    intro: [
+      "Modern root canal therapy is nothing like its old reputation. With advanced rotary endodontics, digital imaging, and high-magnification loops, we can relieve severe toothaches and save your natural teeth in a highly comfortable and efficient manner.",
+      "A root canal is necessary when the inner pulp of a tooth becomes inflamed or infected due to deep decay or injury. During the procedure, we carefully clean out the infection, sanitize the canals, and seal the space to prevent future contamination.",
+      "We complete most root canal treatments in a single sitting, followed by a durable custom crown to restore the tooth's structural strength. Saving your natural tooth is always our priority, as it maintains your natural bite and prevents shifting."
+    ],
     highlights: [
       { title: "Single-Sitting RCT", body: "Most cases completed in one appointment." },
       { title: "Rotary Endodontics", body: "Precise, faster cleaning of the root canals." },
@@ -180,8 +195,11 @@ export const services: Service[] = [
     title: "Pediatric Dentistry",
     tagline: "Gentle, fun dentistry to keep little smiles healthy.",
     image: pediatric,
-    intro:
-      "From the first tooth to teenage years, we make dental visits a positive experience. Our child-friendly approach focuses on prevention, education and trust.",
+    intro: [
+      "From the first tooth to teenage years, we make dental visits a positive and fun experience for little ones. Our pediatric care focuses heavily on dental education, cavity prevention, and building a foundation of trust that prevents dental anxiety for life.",
+      "Our clinic is designed to put kids at ease, and we use a gentle 'Tell-Show-Do' communication style. We explain every tool and step in playful, non-scary language, ensuring your child feels in control and safe throughout their routine cleaning or treatment.",
+      "We offer specialized services such as fluoride applications to strengthen growing enamel, dental sealants to protect chewing surfaces from decay, and guidance on positive brushing habits and nutrition for parents."
+    ],
     highlights: [
       { title: "Tell-Show-Do Approach", body: "We explain everything in a child's language before doing it." },
       { title: "Preventive Care", body: "Fluoride application, sealants and habit counselling." },
@@ -210,8 +228,11 @@ export const services: Service[] = [
     title: "Dental Veneers",
     tagline: "Ultra-thin ceramic shells for an instantly perfect smile.",
     image: veneers,
-    intro:
-      "Veneers correct chips, gaps, stains and uneven teeth in just a couple of visits. We use premium e.max and zirconia veneers for natural translucency and strength.",
+    intro: [
+      "Dental veneers are ultra-thin shells of premium ceramic or porcelain that are custom-bonded to the front surfaces of your teeth. They are the ideal solution for instantly correcting chips, cracks, gaps, severe discoloration, or minor misalignment.",
+      "We offer high-grade e.max and zirconia veneers, celebrated for their natural translucency, lifelike shine, and incredible durability. Because the shells are incredibly thin, we only need to prepare a fraction of a millimeter of your enamel, preserving your tooth structure.",
+      "Each veneer is individually handcrafted and shade-matched to complement your facial structure and skin tone. In just two visits, veneers can provide a dramatic yet natural-looking transformation that is highly resistant to coffee, tea, and smoke stains."
+    ],
     highlights: [
       { title: "Minimal Tooth Reduction", body: "Just a fraction of a millimetre prepared from the front surface." },
       { title: "Premium Ceramics", body: "Stain-resistant, lifelike e.max & zirconia options." },
@@ -240,8 +261,11 @@ export const services: Service[] = [
     title: "Emergency Dental Care",
     tagline: "Same-day relief for dental pain & accidents.",
     image: emergency,
-    intro:
-      "Toothache, swelling, a knocked-out tooth or a broken crown? Call us on 9783204194 — we keep slots reserved daily for dental emergencies in Sikar.",
+    intro: [
+      "Dental emergencies can be stressful and painful. Whether you are dealing with a severe toothache, swelling, a fractured tooth, a knocked-out tooth, or a damaged restoration, our team in Sikar is prepared to provide same-day relief.",
+      "We keep emergency time slots open in our daily schedule so that walk-in patients can be diagnosed and treated without long wait times. Our immediate priority is to manage your pain, stabilize the condition, and prevent further damage to your teeth and gums.",
+      "If you experience a dental emergency, contact us immediately. We will guide you through crucial first-aid steps over the phone — such as how to preserve a knocked-out tooth — to ensure the best chance of saving your tooth upon arrival."
+    ],
     highlights: [
       { title: "Same-Day Appointment", body: "Walk-ins and emergencies prioritised." },
       { title: "Rapid Pain Relief", body: "Immediate diagnosis and pain management." },
@@ -270,8 +294,11 @@ export const services: Service[] = [
     title: "Smile Makeover",
     tagline: "A combination plan crafted around your dream smile.",
     image: smile,
-    intro:
-      "A smile makeover blends multiple cosmetic and restorative treatments into one personalised plan — whitening, veneers, alignment and gum contouring as needed.",
+    intro: [
+      "A smile makeover is a comprehensive, customized rejuvenation plan that combines multiple cosmetic and restorative treatments to achieve your dream smile. We look at your entire facial aesthetic, including lip line, gum height, and tooth proportions, to design a balanced look.",
+      "Based on your goals, a makeover may combine teeth whitening, ceramic veneers, clear aligners, aesthetic dental crowns, or gum contouring. We use digital smile analysis to plan every detail, giving you a preview of the final results before we start.",
+      "This comprehensive approach not only enhances the visual beauty of your smile but also restores proper alignment, bite function, and long-term oral health. It is a transformative investment in your self-confidence and overall well-being."
+    ],
     highlights: [
       { title: "Full Face Analysis", body: "We design the smile to match your face shape and personality." },
       { title: "All-In-One Plan", body: "One coordinated treatment plan, one transparent cost." },

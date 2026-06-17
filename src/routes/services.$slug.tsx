@@ -64,7 +64,15 @@ function ServiceDetail() {
       <section className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-3">
         <div className="md:col-span-2">
           <h2 className="font-serif text-4xl">About this treatment</h2>
-          <p className="mt-5 text-muted-foreground leading-relaxed">{s.intro}</p>
+          <div className="mt-5 space-y-4 text-muted-foreground leading-relaxed">
+            {Array.isArray(s.intro) ? (
+              s.intro.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))
+            ) : (
+              <p>{s.intro}</p>
+            )}
+          </div>
         </div>
         <aside className="rounded-2xl bg-sand/30 p-6">
           <dl className="space-y-4 text-sm">
