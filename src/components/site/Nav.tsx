@@ -29,7 +29,7 @@ export function Nav() {
         </nav>
         <Link
           to="/contact"
-          className="rounded-full bg-sand-deep px-6 py-3 text-xs font-medium tracking-[0.18em] text-white shadow-sm transition hover:bg-sand-deep/90"
+          className="hidden md:inline-block rounded-full bg-sand-deep px-6 py-3 text-xs font-medium tracking-[0.18em] text-white shadow-sm transition hover:bg-sand-deep/90"
         >
           BOOK APPOINTMENT
         </Link>
