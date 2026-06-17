@@ -78,7 +78,9 @@ export function Nav() {
         }}
       >
         <div className="flex items-center justify-between pb-6 border-b border-border/40">
-          <Logo compact={true} />
+          <Link to="/" className="shrink-0 font-serif text-lg tracking-wide" onClick={closeMenu}>
+            DENTA PROOF
+          </Link>
           <button
             onClick={closeMenu}
             className="rounded-full p-2 text-foreground/85 hover:bg-black/5 transition-colors"

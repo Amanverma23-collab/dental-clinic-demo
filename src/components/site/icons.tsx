@@ -1,4 +1,6 @@
 import type { SVGProps } from "react";
+import logoUrl from "@/assets/logo.png";
+import logoIconUrl from "@/assets/logo-icon.png";
 
 const base = {
   fill: "none",
@@ -69,19 +71,40 @@ export const SmileIcon = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Logo = ({ className = "", compact = false }: { className?: string; compact?: boolean }) => (
-  <div className={`flex items-center gap-2 ${className}`}>
-    <svg viewBox="0 0 48 48" className="h-9 w-9 text-teal-soft shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-      <path d="M16 16c-3 0-6 2-6 6 0 3 2 4 3 7 1 2 1 6 2 10 1 2 3 3 4 0 1-3 1-6 3-6s2 3 3 6c1 3 3 2 4 0 1-4 1-8 2-10 1-3 3-4 3-7 0-4-3-6-6-6-2 0-3 1-5 1s-3-1-5-1z"/>
-      <path d="M24 6v4M14 8l2 3M34 8l-2 3M8 14l3 1M40 14l-3 1"/>
-    </svg>
-    <div className="leading-none min-w-0">
-      <div className={`font-serif tracking-wide text-foreground whitespace-nowrap ${compact ? 'text-lg' : 'text-xl'}`}>
-        DENTA PROOF
+export const Logo = ({ 
+  className = "", 
+  compact = false, 
+  variant = "text"
+}: { 
+  className?: string; 
+  compact?: boolean; 
+  variant?: "text" | "image"; 
+}) => {
+  if (variant === "image") {
+    return (
+      <img 
+        src={logoUrl} 
+        alt="Denta Proof Logo" 
+        className={`w-auto object-contain transition-all duration-300 ${compact ? 'h-9' : 'h-14'} ${className}`}
+      />
+    );
+  }
+
+  return (
+    <div className={`flex items-center gap-2 ${className}`}>
+      <img 
+        src={logoIconUrl} 
+        alt="Denta Proof Icon" 
+        className={`w-auto object-contain shrink-0 transition-all duration-300 ${compact ? 'h-8' : 'h-10'}`} 
+      />
+      <div className="leading-none min-w-0">
+        <div className={`font-serif tracking-wide text-current whitespace-nowrap ${compact ? 'text-lg' : 'text-xl'}`}>
+          DENTA PROOF
+        </div>
+        {!compact && (
+          <div className="text-[10px] tracking-[0.3em] text-current opacity-70 mt-0.5">SIKAR · CLINIC</div>
+        )}
       </div>
-      {!compact && (
-        <div className="text-[10px] tracking-[0.3em] text-muted-foreground mt-0.5">SIKAR · CLINIC</div>
-      )}
     </div>
-  </div>
-);
+  );
+};
