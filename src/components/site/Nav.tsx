@@ -70,11 +70,11 @@ export function Nav() {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-full max-w-[220px] border-l border-border/40 p-6 shadow-2xl transition-transform duration-300 ease-in-out md:hidden flex flex-col ${
+        className={`fixed inset-y-0 right-0 z-50 w-full max-w-[220px] bg-white border-l border-border/40 p-6 shadow-2xl transition-transform duration-300 ease-in-out md:hidden flex flex-col ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          backgroundColor: "#ffffff",
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
         }}
