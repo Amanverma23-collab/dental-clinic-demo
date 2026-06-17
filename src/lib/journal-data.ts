@@ -44,6 +44,12 @@ export const journalPosts: JournalPost[] = [
         ],
       },
       {
+        heading: "Eat a Tooth-Friendly Diet",
+        paragraphs: [
+          "What you eat has a direct impact on your teeth. Calcium-rich foods like milk, cheese, and yogurt help strengthen enamel, while crunchy fruits and vegetables like apples, carrots, and celery stimulate saliva flow, which naturally cleans teeth. Limit sugary, sticky snacks that cling to your teeth and feed harmful bacteria.",
+        ],
+      },
+      {
         heading: "Regular Checkups Matter",
         paragraphs: [
           "Even the best home routine can't replace professional cleanings. Visit your dentist every six months for a thorough cleaning and exam. Early detection of issues like cavities or gum disease saves you pain, time, and money down the road.",
