@@ -69,15 +69,19 @@ export const SmileIcon = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Logo = ({ className = "" }: { className?: string }) => (
+export const Logo = ({ className = "", compact = false }: { className?: string; compact?: boolean }) => (
   <div className={`flex items-center gap-2 ${className}`}>
-    <svg viewBox="0 0 48 48" className="h-9 w-9 text-teal-soft" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+    <svg viewBox="0 0 48 48" className="h-9 w-9 text-teal-soft shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
       <path d="M16 16c-3 0-6 2-6 6 0 3 2 4 3 7 1 2 1 6 2 10 1 2 3 3 4 0 1-3 1-6 3-6s2 3 3 6c1 3 3 2 4 0 1-4 1-8 2-10 1-3 3-4 3-7 0-4-3-6-6-6-2 0-3 1-5 1s-3-1-5-1z"/>
       <path d="M24 6v4M14 8l2 3M34 8l-2 3M8 14l3 1M40 14l-3 1"/>
     </svg>
-    <div className="leading-none">
-      <div className="font-serif text-xl tracking-wide text-foreground">DENTA PROOF</div>
-      <div className="text-[10px] tracking-[0.3em] text-muted-foreground">SIKAR · CLINIC</div>
+    <div className="leading-none min-w-0">
+      <div className={`font-serif tracking-wide text-foreground whitespace-nowrap ${compact ? 'text-lg' : 'text-xl'}`}>
+        DENTA PROOF
+      </div>
+      {!compact && (
+        <div className="text-[10px] tracking-[0.3em] text-muted-foreground mt-0.5">SIKAR · CLINIC</div>
+      )}
     </div>
   </div>
 );
