@@ -75,8 +75,6 @@ export function Nav() {
         }`}
         style={{
           backgroundColor: "#ffffff",
-          backdropFilter: "blur(24px)",
-          WebkitBackdropFilter: "blur(24px)",
         }}
       >
         <div className="flex items-center justify-between pb-6 border-b border-border/40">
