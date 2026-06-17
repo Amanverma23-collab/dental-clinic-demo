@@ -80,81 +80,98 @@ function Contact() {
           ))}
         </div>
 
-        <form className="mx-auto mt-16 grid max-w-3xl gap-4 rounded-3xl bg-cream p-10">
-          <div className="grid gap-4 md:grid-cols-2">
-            <input className="rounded-xl border border-border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Your name" />
-            <input className="rounded-xl border border-border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Phone number" />
-          </div>
+        <div className="mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2">
+          {/* Booking Form - Left Side */}
+          <form className="grid gap-4 rounded-3xl bg-cream p-10">
+            <div className="grid gap-4 md:grid-cols-2">
+              <input className="rounded-xl border border-border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Your name" />
+              <input className="rounded-xl border border-border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Phone number" />
+            </div>
 
-          {/* Hidden input for form submission value */}
-          <input type="hidden" name="service" value={value} />
+            {/* Hidden input for form submission value */}
+            <input type="hidden" name="service" value={value} />
 
-          {/* Custom Searchable Select Dropdown */}
-          <div ref={containerRef} className="relative w-full">
-            <button
-              type="button"
-              onClick={() => setIsOpen(!isOpen)}
-              className="w-full flex items-center justify-between rounded-xl border border-border bg-white px-4 py-3 text-sm text-foreground/85 hover:bg-white focus:outline-none focus:ring-1 focus:ring-primary transition cursor-pointer text-left"
-            >
-              <span className={cn(!value && "text-muted-foreground")}>
-                {value
-                  ? servicesList.find((service) => service.value === value)?.label
-                  : "Service of interest"}
-              </span>
-              <ChevronDown className={cn("h-4 w-4 opacity-50 transition-transform duration-200", isOpen && "rotate-180")} />
+            {/* Custom Searchable Select Dropdown */}
+            <div ref={containerRef} className="relative w-full">
+              <button
+                type="button"
+                onClick={() => setIsOpen(!isOpen)}
+                className="w-full flex items-center justify-between rounded-xl border border-border bg-white px-4 py-3 text-sm text-foreground/85 hover:bg-white focus:outline-none focus:ring-1 focus:ring-primary transition cursor-pointer text-left"
+              >
+                <span className={cn(!value && "text-muted-foreground")}>
+                  {value
+                    ? servicesList.find((service) => service.value === value)?.label
+                    : "Service of interest"}
+                </span>
+                <ChevronDown className={cn("h-4 w-4 opacity-50 transition-transform duration-200", isOpen && "rotate-180")} />
+              </button>
+
+              {isOpen && (
+                <div className="absolute z-50 left-0 right-0 mt-2 max-h-80 rounded-2xl border border-border bg-white shadow-xl flex flex-col p-2 space-y-2 animate-in fade-in-0 slide-in-from-top-2 duration-150">
+                  {/* Search Input Container */}
+                  <div className="flex items-center bg-slate-50 border border-border rounded-xl px-3 py-2">
+                    <Search className="mr-2 h-4 w-4 shrink-0 text-muted-foreground" />
+                    <input
+                      type="text"
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      placeholder="Search input"
+                      className="w-full bg-transparent text-sm outline-none placeholder:text-muted-foreground py-0.5"
+                    />
+                  </div>
+                  {/* Options List */}
+                  <div className="overflow-y-auto max-h-52 space-y-0.5">
+                    {filteredServices.length === 0 ? (
+                      <div className="py-6 text-center text-sm text-muted-foreground">No options found</div>
+                    ) : (
+                      filteredServices.map((service) => (
+                        <button
+                          key={service.value}
+                          type="button"
+                          onClick={() => {
+                            setValue(service.value);
+                            setIsOpen(false);
+                            setSearchTerm("");
+                          }}
+                          className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-left hover:bg-slate-50 transition cursor-pointer text-foreground/85 hover:text-foreground"
+                        >
+                          <div className={cn(
+                            "flex h-5 w-5 shrink-0 items-center justify-center rounded-full border transition-colors",
+                            value === service.value ? "border-sand-deep bg-sand-deep text-white" : "border-border bg-slate-50"
+                          )}>
+                            {value === service.value && (
+                              <Check className="h-3.5 w-3.5 stroke-[3px]" />
+                            )}
+                          </div>
+                          <span className="font-medium">{service.label}</span>
+                        </button>
+                      ))
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <textarea rows={5} className="rounded-xl border border-border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="How can we help?" />
+            <button type="button" className="mt-2 self-center rounded-full bg-sand-deep px-8 py-4 text-xs tracking-[0.22em] text-white hover:bg-sand-deep/90 transition cursor-pointer">
+              REQUEST APPOINTMENT
             </button>
+          </form>
 
-            {isOpen && (
-              <div className="absolute z-50 left-0 right-0 mt-2 max-h-80 rounded-2xl border border-border bg-white shadow-xl flex flex-col p-2 space-y-2 animate-in fade-in-0 slide-in-from-top-2 duration-150">
-                {/* Search Input Container */}
-                <div className="flex items-center bg-slate-50 border border-border rounded-xl px-3 py-2">
-                  <Search className="mr-2 h-4 w-4 shrink-0 text-muted-foreground" />
-                  <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Search input"
-                    className="w-full bg-transparent text-sm outline-none placeholder:text-muted-foreground py-0.5"
-                  />
-                </div>
-                {/* Options List */}
-                <div className="overflow-y-auto max-h-52 space-y-0.5">
-                  {filteredServices.length === 0 ? (
-                    <div className="py-6 text-center text-sm text-muted-foreground">No options found</div>
-                  ) : (
-                    filteredServices.map((service) => (
-                      <button
-                        key={service.value}
-                        type="button"
-                        onClick={() => {
-                          setValue(service.value);
-                          setIsOpen(false);
-                          setSearchTerm("");
-                        }}
-                        className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-left hover:bg-slate-50 transition cursor-pointer text-foreground/85 hover:text-foreground"
-                      >
-                        <div className={cn(
-                          "flex h-5 w-5 shrink-0 items-center justify-center rounded-full border transition-colors",
-                          value === service.value ? "border-sand-deep bg-sand-deep text-white" : "border-border bg-slate-50"
-                        )}>
-                          {value === service.value && (
-                            <Check className="h-3.5 w-3.5 stroke-[3px]" />
-                          )}
-                        </div>
-                        <span className="font-medium">{service.label}</span>
-                      </button>
-                    ))
-                  )}
-                </div>
-              </div>
-            )}
+          {/* Location Map - Right Side */}
+          <div className="rounded-3xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7239099.541306907!2d65.93274737499999!3d27.63329340000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cbbc2b813fbd1%3A0xeb6cd73382c20f9f!2sDentaproof%20Dental%20Hospital!5e0!3m2!1sen!2sin!4v1781729440052!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: "400px" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Denta Proof Dental Hospital Location"
+            />
           </div>
-
-          <textarea rows={5} className="rounded-xl border border-border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="How can we help?" />
-          <button type="button" className="mt-2 self-center rounded-full bg-sand-deep px-8 py-4 text-xs tracking-[0.22em] text-white hover:bg-sand-deep/90 transition cursor-pointer">
-            REQUEST APPOINTMENT
-          </button>
-        </form>
+        </div>
       </section>
       <Footer />
     </main>

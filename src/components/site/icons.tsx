@@ -91,11 +91,11 @@ export const Logo = ({
   }
 
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
+    <div className={`flex items-center gap-1 md:gap-2 ${className}`}>
       <img 
         src={logoIconUrl} 
         alt="Denta Proof Icon" 
-        className={`w-auto object-contain shrink-0 transition-all duration-300 ${compact ? 'h-8' : 'h-10'}`} 
+        className={`w-auto object-contain shrink-0 transition-all duration-300 animate-spin-slow ${compact ? 'h-8' : 'h-10'}`} 
       />
       <div className="leading-none min-w-0">
         <div className={`font-serif tracking-wide text-current whitespace-nowrap ${compact ? 'text-lg' : 'text-xl'}`}>

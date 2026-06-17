@@ -146,20 +146,39 @@ export function Testimonials() {
         </div>
 
         {/* Right Side: Statistics Card (from the original design) */}
-        <div className="rounded-2xl bg-sand/30 p-8 flex flex-col justify-between h-full min-h-[350px]">
+        <div className="rounded-2xl bg-sand/30 p-8 flex flex-col justify-between h-full min-h-[400px]">
           <div>
-            <p className="text-xs tracking-[0.25em] text-muted-foreground">STATISTICS</p>
-            <div className="mt-6">
-              <p className="font-serif text-5xl text-sand-deep">&gt;7,800</p>
-              <p className="text-xs tracking-wider text-muted-foreground">Happy patients treated</p>
-            </div>
-            <div className="mt-8">
-              <p className="font-serif text-5xl text-sand-deep">&gt;46%</p>
-              <p className="text-xs tracking-wider text-muted-foreground">Returning families</p>
+            <p className="text-xs tracking-[0.25em] text-muted-foreground uppercase font-semibold">STATISTICS</p>
+            
+            <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-8">
+              {/* Stat 1 */}
+              <div className="flex flex-col border-l-2 border-sand-deep/25 pl-4">
+                <p className="font-serif text-3xl font-bold text-foreground">7,800+</p>
+                <p className="text-xs text-muted-foreground mt-1">Happy Patients</p>
+              </div>
+
+              {/* Stat 2 */}
+              <div className="flex flex-col border-l-2 border-sand-deep/25 pl-4">
+                <p className="font-serif text-3xl font-bold text-foreground">99.2%</p>
+                <p className="text-xs text-muted-foreground mt-1">Success Rate</p>
+              </div>
+
+              {/* Stat 3 */}
+              <div className="flex flex-col border-l-2 border-sand-deep/25 pl-4">
+                <p className="font-serif text-3xl font-bold text-foreground">5.0 ★</p>
+                <p className="text-xs text-muted-foreground mt-1">Google Rating</p>
+              </div>
+
+              {/* Stat 4 */}
+              <div className="flex flex-col border-l-2 border-sand-deep/25 pl-4">
+                <p className="font-serif text-3xl font-bold text-foreground">10+ Yrs</p>
+                <p className="text-xs text-muted-foreground mt-1">Experience</p>
+              </div>
             </div>
           </div>
+          
           <div className="mt-8 border-t border-sand-deep/20 pt-6 text-xs text-muted-foreground">
-            10+ years of trusted dental care in Sikar.
+            Trusted dental care and family-friendly procedures in Sikar.
           </div>
         </div>
       </div>

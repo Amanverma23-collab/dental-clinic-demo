@@ -17,8 +17,8 @@ export function Nav() {
   return (
     <>
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-border/40 bg-white/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link to="/" className="shrink-0" onClick={closeMenu}>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 md:px-6 py-5">
+          <Link to="/" className="shrink-0 -ml-4 md:ml-0" onClick={closeMenu}>
             <Logo />
           </Link>
           <nav className="hidden items-center gap-8 text-sm tracking-[0.18em] text-foreground/85 md:flex">
@@ -49,7 +49,7 @@ export function Nav() {
             {/* Hamburger Icon */}
             <button
               onClick={toggleMenu}
-              className="rounded-full p-2 ml-auto mr-0 text-foreground/85 md:hidden hover:bg-black/5 hover:text-foreground transition-colors"
+              className="rounded-full p-2 ml-auto -mr-2 text-foreground/85 md:hidden hover:bg-black/5 hover:text-foreground transition-colors"
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -77,7 +77,7 @@ export function Nav() {
           WebkitBackdropFilter: "blur(20px)",
         }}
       >
-        <div className="flex items-center justify-between pb-6 border-b border-border/40">
+        <div className="flex items-center justify-between pb-4 border-b border-border/40">
           <Link to="/" className="shrink-0 font-serif text-lg tracking-wide" onClick={closeMenu}>
             DENTA PROOF
           </Link>
@@ -90,7 +90,7 @@ export function Nav() {
           </button>
         </div>
 
-        <nav className="mt-8 flex flex-col gap-6 text-sm font-medium tracking-[0.18em] text-foreground/85">
+        <nav className="mt-4 flex flex-col gap-6 text-sm font-medium tracking-[0.18em] text-foreground/85">
           <Link
             to="/services"
             className="hover:text-foreground py-2 border-b border-border/10"
