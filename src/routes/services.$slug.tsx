@@ -11,12 +11,12 @@ export const Route = createFileRoute("/services/$slug")({
   },
   head: ({ loaderData }) => {
     const s = loaderData?.service;
-    if (!s) return { meta: [{ title: "Service — Dr. Dental Sikar" }] };
+    if (!s) return { meta: [{ title: "Service — Denta Proof Sikar" }] };
     return {
       meta: [
-        { title: `${s.title} in Sikar — Dr. Dental` },
+        { title: `${s.title} in Sikar — Denta Proof` },
         { name: "description", content: s.tagline },
-        { property: "og:title", content: `${s.title} — Dr. Dental Sikar` },
+        { property: "og:title", content: `${s.title} — Denta Proof Sikar` },
         { property: "og:description", content: s.tagline },
         { property: "og:image", content: s.image },
       ],
@@ -51,7 +51,7 @@ function ServiceDetail() {
         <img src={s.image} alt={s.title} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
         <div className="relative mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 pt-24 text-center text-white">
-          <p className="text-xs tracking-[0.3em] opacity-90">DR. DENTAL · SIKAR</p>
+          <p className="text-xs tracking-[0.3em] opacity-90">DENTA PROOF · SIKAR</p>
           <h1 className="mt-4 font-serif text-5xl md:text-7xl">{s.title}</h1>
           <p className="mt-4 max-w-2xl text-lg opacity-95">{s.tagline}</p>
           <Link to="/contact" className="mt-8 rounded-full bg-sand-deep px-7 py-3 text-xs tracking-[0.2em]">
@@ -154,7 +154,7 @@ function ServiceDetail() {
       <section className="px-6 py-20 text-center">
         <h2 className="font-serif text-4xl md:text-5xl">Ready to begin?</h2>
         <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          Book your consultation at Dr. Dental, Sikar — call <a href="tel:9783204194" className="text-sand-deep">9783204194</a> or schedule online.
+          Book your consultation at Denta Proof, Sikar — call <a href="tel:9783204194" className="text-sand-deep">9783204194</a> or schedule online.
         </p>
         <Link to="/contact" className="mt-8 inline-block rounded-full bg-sand-deep px-8 py-4 text-xs tracking-[0.2em] text-white">
           BOOK APPOINTMENT

@@ -3,7 +3,7 @@ import hero from "@/assets/hero.jpg";
 export function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden">
-      <img src={hero} alt="Dr. Dental clinic operatory in Sikar" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
+      <img src={hero} alt="Denta Proof clinic operatory in Sikar" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/30" />
       <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 pt-24 text-center text-white">
         <h1 className="font-serif text-5xl leading-[1.05] md:text-7xl">

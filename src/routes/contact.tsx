@@ -5,10 +5,10 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Dr. Dental Sikar — Book an Appointment" },
+      { title: "Contact Denta Proof Sikar — Book an Appointment" },
       { name: "description", content: "Book your dental appointment in Sikar. Call +91 97832 04194 or visit our clinic on Piprali Road." },
-      { property: "og:title", content: "Contact Dr. Dental Sikar" },
-      { property: "og:description", content: "Call +91 97832 04194 to schedule your visit with Dr. Dental, Sikar." },
+      { property: "og:title", content: "Contact Denta Proof Sikar" },
+      { property: "og:description", content: "Call +91 97832 04194 to schedule your visit with Denta Proof, Sikar." },
     ],
   }),
   component: Contact,

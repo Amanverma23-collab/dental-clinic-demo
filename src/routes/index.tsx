@@ -12,9 +12,9 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dr. Dental Sikar — Modern Dentistry & Cosmetic Care" },
+      { title: "Denta Proof Sikar — Modern Dentistry & Cosmetic Care" },
       { name: "description", content: "Advanced dental care in Sikar — cosmetic dentistry, whitening, implants & family dentistry. Call +91 97832 04194 to book." },
-      { property: "og:title", content: "Dr. Dental Sikar — Confident & Healthy Smiles" },
+      { property: "og:title", content: "Denta Proof Sikar — Confident & Healthy Smiles" },
       { property: "og:description", content: "Cosmetic dentistry, whitening, implants & family dental care delivered with precision and comfort in Sikar." },
     ],
   }),

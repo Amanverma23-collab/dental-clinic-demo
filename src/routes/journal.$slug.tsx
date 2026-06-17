@@ -7,8 +7,8 @@ import { Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/journal/$slug")({
   head: () => ({
     meta: [
-      { title: "Journal — Dr. Dental Sikar" },
-      { name: "description", content: "Read dental tips and oral health guides from Dr. Dental in Sikar." },
+      { title: "Journal — Denta Proof Sikar" },
+      { name: "description", content: "Read dental tips and oral health guides from Denta Proof in Sikar." },
     ],
   }),
   loader: ({ params }) => {

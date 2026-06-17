@@ -31,7 +31,7 @@ export const services: Service[] = [
     intro: [
       "Our cosmetic dentistry program in Sikar combines digital smile design, high-grade ceramics, and an artist's eye to give you a smile that looks naturally yours — only better. We understand that a smile is a key part of your identity, which is why we customize every treatment plan to align perfectly with your facial features, skin tone, and personal expression.",
       "Whether you are looking to fix small chips, close gaps, or completely redesign your smile, our modern solutions are minimally invasive and highly aesthetic. We utilize state-of-the-art materials like e.max veneers, zirconium crowns, and advanced bonding techniques to deliver durable, beautiful results.",
-      "At Dr. Dental Sikar, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
+      "At Denta Proof Sikar, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
     ],
     highlights: [
       { title: "Digital Smile Design", body: "See a 3D preview of your new smile before any treatment begins." },

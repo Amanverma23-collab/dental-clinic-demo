@@ -76,7 +76,7 @@ export const Logo = ({ className = "" }: { className?: string }) => (
       <path d="M24 6v4M14 8l2 3M34 8l-2 3M8 14l3 1M40 14l-3 1"/>
     </svg>
     <div className="leading-none">
-      <div className="font-serif text-xl tracking-wide text-foreground">DR. DENTAL</div>
+      <div className="font-serif text-xl tracking-wide text-foreground">DENTA PROOF</div>
       <div className="text-[10px] tracking-[0.3em] text-muted-foreground">SIKAR · CLINIC</div>
     </div>
   </div>
