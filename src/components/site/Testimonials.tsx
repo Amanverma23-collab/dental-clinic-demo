@@ -4,7 +4,7 @@ const googleReviews = [
     initial: "R",
     rating: 5,
     date: "2 months ago",
-    text: "The dentist was highly skilled and took the time to explain the procedure clearly, which made me feel comfortable and confident throughout the treatment. The use of advanced equipment and painless techniques truly reflected the clinic’s commitment to quality care. I would highly recommend this clinic to anyone looking for excellent dental care.",
+    text: "The dentist was highly skilled and took the time to explain the procedure clearly, which made me feel comfortable and confident throughout the treatment. The use of advanced equipment and painless techniques truly reflected the hospital’s commitment to quality care. I would highly recommend this hospital to anyone looking for excellent dental care.",
     avatarBg: "bg-gradient-to-tr from-blue-500 to-teal-400"
   },
   {
@@ -20,7 +20,7 @@ const googleReviews = [
     initial: "V",
     rating: 5,
     date: "5 months ago",
-    text: "Bahut hi accha experience raha is dental clinic mein. Staff ka behavior friendly aur professional tha, bilkul comfortable feel karwaya. Doctor ne har cheez clearly samjhayi aur treatment pain-free raha. Clinic clean, hygienic aur well-maintained tha. Definitely recommend karunga.",
+    text: "Bahut hi accha experience raha is dental hospital mein. Staff ka behavior friendly aur professional tha, bilkul comfortable feel karwaya. Doctor ne har cheez clearly samjhayi aur treatment pain-free raha. Hospital clean, hygienic aur well-maintained tha. Definitely recommend karunga.",
     avatarBg: "bg-gradient-to-tr from-purple-500 to-pink-400"
   },
   {
@@ -28,7 +28,7 @@ const googleReviews = [
     initial: "V",
     rating: 5,
     date: "2 months ago",
-    text: "Excellent service with highly skilled dentists. The staff is very polite and the clinic maintains great hygiene standards.",
+    text: "Excellent service with highly skilled dentists. The staff is very polite and the hospital maintains great hygiene standards.",
     avatarBg: "bg-gradient-to-tr from-emerald-500 to-green-400"
   },
   {
@@ -36,7 +36,7 @@ const googleReviews = [
     initial: "P",
     rating: 5,
     date: "5 months ago",
-    text: "The Best dental clinic in Sikar 🫡🫡",
+    text: "The Best dental hospital in Sikar 🫡🫡",
     avatarBg: "bg-gradient-to-tr from-rose-500 to-red-400"
   },
   {

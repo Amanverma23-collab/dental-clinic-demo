@@ -79,7 +79,7 @@ export function Nav() {
       >
         <div className="flex items-center justify-between pb-4 border-b border-border/40">
           <Link to="/" className="shrink-0 font-serif text-lg tracking-wide" onClick={closeMenu}>
-            DENTA PROOF
+            ASHIRWAD DENTAL
           </Link>
           <button
             onClick={closeMenu}

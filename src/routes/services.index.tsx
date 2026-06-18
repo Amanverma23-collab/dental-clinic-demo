@@ -6,9 +6,9 @@ import { services } from "@/lib/services-data";
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Our Dental Services — Denta Proof Sikar" },
+      { title: "Our Dental Services — Ashirwad Dental Sikar" },
       { name: "description", content: "Complete dental care in Sikar — cosmetic dentistry, whitening, implants, Invisalign, root canal, pediatric, veneers, emergency care & smile makeovers." },
-      { property: "og:title", content: "Dental Services in Sikar — Denta Proof" },
+      { property: "og:title", content: "Dental Services in Sikar — Ashirwad Dental" },
     ],
   }),
   component: ServicesIndex,
@@ -22,7 +22,7 @@ function ServicesIndex() {
         <p className="text-xs tracking-[0.3em] text-sand-deep">OUR SERVICES</p>
         <h1 className="mx-auto mt-4 max-w-3xl font-serif text-5xl md:text-6xl">Complete Dental Care, Under One Roof</h1>
         <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-          Explore every treatment we offer at Denta Proof, Sikar — from routine cleanings to advanced cosmetic and surgical care.
+          Explore every treatment we offer at Ashirwad Dental, Sikar — from routine cleanings to advanced cosmetic and surgical care.
         </p>
       </section>
 

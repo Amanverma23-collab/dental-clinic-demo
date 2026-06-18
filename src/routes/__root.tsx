@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Denta Proof Sikar" },
-      { name: "description", content: "Modern dental clinic in Sikar — cosmetic dentistry, whitening, implants & family care." },
+      { title: "Ashirwad Dental Sikar" },
+      { name: "description", content: "Modern dental hospital in Sikar — cosmetic dentistry, whitening, implants & family care." },
       { property: "og:type", content: "website" },
     ],
     links: [

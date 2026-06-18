@@ -5,7 +5,7 @@ import kidsImg from "@/assets/journal-kids.jpg";
 
 const posts = [
   { slug: "smile-healthy-habits", tag: "Hygiene", title: "5 Habits That Keep Your Smile Healthy", excerpt: "Small daily routines that make a big difference for long-term oral health.", image: hygieneImg },
-  { slug: "in-clinic-vs-home-whitening", tag: "Whitening", title: "In-Clinic vs At-Home Whitening", excerpt: "What actually works, what's safe, and what to expect from each option.", image: whiteningImg },
+  { slug: "in-clinic-vs-home-whitening", tag: "Whitening", title: "In-Hospital vs At-Home Whitening", excerpt: "What actually works, what's safe, and what to expect from each option.", image: whiteningImg },
   { slug: "child-first-dental-visit", tag: "Kids", title: "Your Child's First Dental Visit", excerpt: "How we make the first appointment a positive experience for little ones.", image: kidsImg },
 ];
 
@@ -15,7 +15,7 @@ export function Journal() {
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-xs tracking-[0.25em] text-sand-deep">JOURNAL</p>
-          <h2 className="mt-2 font-serif text-4xl md:text-5xl">Tips From Our Clinic</h2>
+          <h2 className="mt-2 font-serif text-4xl md:text-5xl">Tips From Our Hospital</h2>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {posts.map((p) => (

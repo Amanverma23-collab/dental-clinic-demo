@@ -31,7 +31,7 @@ export const services: Service[] = [
     intro: [
       "Our cosmetic dentistry program in Sikar combines digital smile design, high-grade ceramics, and an artist's eye to give you a smile that looks naturally yours — only better. We understand that a smile is a key part of your identity, which is why we customize every treatment plan to align perfectly with your facial features, skin tone, and personal expression.",
       "Whether you are looking to fix small chips, close gaps, or completely redesign your smile, our modern solutions are minimally invasive and highly aesthetic. We utilize state-of-the-art materials like e.max veneers, zirconium crowns, and advanced bonding techniques to deliver durable, beautiful results.",
-      "At Denta Proof Sikar, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
+      "At Ashirwad Dental Sikar, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
     ],
     highlights: [
       { title: "Digital Smile Design", body: "See a 3D preview of your new smile before any treatment begins." },
@@ -39,7 +39,7 @@ export const services: Service[] = [
       { title: "Minimally Invasive", body: "We preserve as much of your natural tooth structure as possible." },
     ],
     procedure: [
-      "Free in-clinic consultation and full smile analysis",
+      "Free in-hospital consultation and full smile analysis",
       "Digital scans, photographs, and a 3D smile mock-up",
       "Personalised treatment plan with cost & timeline",
       "Tooth preparation and temporary restorations",
@@ -197,7 +197,7 @@ export const services: Service[] = [
     image: pediatric,
     intro: [
       "From the first tooth to teenage years, we make dental visits a positive and fun experience for little ones. Our pediatric care focuses heavily on dental education, cavity prevention, and building a foundation of trust that prevents dental anxiety for life.",
-      "Our clinic is designed to put kids at ease, and we use a gentle 'Tell-Show-Do' communication style. We explain every tool and step in playful, non-scary language, ensuring your child feels in control and safe throughout their routine cleaning or treatment.",
+      "Our hospital is designed to put kids at ease, and we use a gentle 'Tell-Show-Do' communication style. We explain every tool and step in playful, non-scary language, ensuring your child feels in control and safe throughout their routine cleaning or treatment.",
       "We offer specialized services such as fluoride applications to strengthen growing enamel, dental sealants to protect chewing surfaces from decay, and guidance on positive brushing habits and nutrition for parents."
     ],
     highlights: [
