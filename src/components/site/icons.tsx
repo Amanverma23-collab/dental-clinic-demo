@@ -84,7 +84,7 @@ export const Logo = ({
     return (
       <img 
         src={logoUrl} 
-        alt="Ashirwad Dental Logo" 
+        alt="Denta Proof Logo" 
         className={`w-auto object-contain transition-all duration-300 ${compact ? 'h-9' : 'h-14'} ${className}`}
       />
     );
@@ -94,15 +94,15 @@ export const Logo = ({
     <div className={`flex items-center gap-1 md:gap-2 ${className}`}>
       <img 
         src={logoIconUrl} 
-        alt="Ashirwad Dental Icon" 
+        alt="Denta Proof Icon" 
         className={`w-auto object-contain shrink-0 transition-all duration-300 animate-spin-slow ${compact ? 'h-8' : 'h-10'}`} 
       />
       <div className="leading-none min-w-0">
         <div className={`font-serif tracking-wide text-current whitespace-nowrap ${compact ? 'text-lg' : 'text-xl'}`}>
-          ASHIRWAD DENTAL
+          DENTA PROOF
         </div>
         {!compact && (
-          <div className="text-[10px] tracking-[0.3em] text-current opacity-70 mt-0.5">SIKAR · HOSPITAL</div>
+          <div className="text-[10px] tracking-[0.3em] text-current opacity-70 mt-0.5">SIKAR · CLINIC</div>
         )}
       </div>
     </div>

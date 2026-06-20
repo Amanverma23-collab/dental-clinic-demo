@@ -18,7 +18,7 @@ export function Footer() {
           <h4 className="mb-4 font-serif text-xl text-white">Contact</h4>
           <p className="text-sm leading-relaxed">
             <a href="tel:9783204194" className="hover:text-white">+91 97832 04194</a><br/>
-            hello@ashirwaddental.in
+            hello@dentaproofsikar.in
           </p>
         </div>
         <div>
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} Ashirwad Dental Sikar · All rights reserved
+        © {new Date().getFullYear()} Denta Proof Sikar · All rights reserved
       </div>
     </footer>
   );

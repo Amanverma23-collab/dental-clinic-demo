@@ -67,16 +67,16 @@ export const journalPosts: JournalPost[] = [
   {
     slug: "in-clinic-vs-home-whitening",
     tag: "Whitening",
-    title: "In-Hospital vs At-Home Whitening",
+    title: "In-Clinic vs At-Home Whitening",
     excerpt: "What actually works, what's safe, and what to expect from each option.",
     image: whiteningImg,
     date: "February 3, 2026",
     readTime: "5 min read",
     content: [
       {
-        heading: "In-Hospital Professional Whitening",
+        heading: "In-Clinic Professional Whitening",
         paragraphs: [
-          "In-hospital whitening delivers the fastest, most dramatic results. Using professional-grade peroxide gel and often activated by a special LED light, a single session can lighten your teeth by several shades in under an hour.",
+          "In-clinic whitening delivers the fastest, most dramatic results. Using professional-grade peroxide gel and often activated by a special LED light, a single session can lighten your teeth by several shades in under an hour.",
           "The biggest advantage is safety and supervision. Your gums are protected, the concentration is precisely controlled, and any sensitivity is managed immediately. Results typically last 1-3 years with good oral care.",
         ],
       },

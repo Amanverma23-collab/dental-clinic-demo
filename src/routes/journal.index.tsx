@@ -7,10 +7,10 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/journal/")({
   head: () => ({
     meta: [
-      { title: "Journal — Ashirwad Dental Sikar" },
-      { name: "description", content: "Dental tips, oral health guides, and hospital updates from Ashirwad Dental in Sikar." },
-      { property: "og:title", content: "Journal — Ashirwad Dental Sikar" },
-      { property: "og:description", content: "Dental tips, oral health guides, and hospital updates from Ashirwad Dental in Sikar." },
+      { title: "Journal — Denta Proof Sikar" },
+      { name: "description", content: "Dental tips, oral health guides, and clinic updates from Denta Proof in Sikar." },
+      { property: "og:title", content: "Journal — Denta Proof Sikar" },
+      { property: "og:description", content: "Dental tips, oral health guides, and clinic updates from Denta Proof in Sikar." },
     ],
   }),
   component: JournalIndex,
@@ -24,7 +24,7 @@ function JournalIndex() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <p className="text-xs tracking-[0.25em] text-sand-deep">JOURNAL</p>
-            <h1 className="mt-2 font-serif text-4xl md:text-5xl">Tips From Our Hospital</h1>
+            <h1 className="mt-2 font-serif text-4xl md:text-5xl">Tips From Our Clinic</h1>
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
               Practical dental advice, treatment insights, and oral health guides written by our team.
             </p>

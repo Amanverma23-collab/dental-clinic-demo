@@ -21,10 +21,10 @@ const servicesList = [
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Ashirwad Dental Sikar — Book an Appointment" },
-      { name: "description", content: "Book your dental appointment in Sikar. Call +91 97832 04194 or visit our hospital on Piprali Road." },
-      { property: "og:title", content: "Contact Ashirwad Dental Sikar" },
-      { property: "og:description", content: "Call +91 97832 04194 to schedule your visit with Ashirwad Dental, Sikar." },
+      { title: "Contact Denta Proof Sikar — Book an Appointment" },
+      { name: "description", content: "Book your dental appointment in Sikar. Call +91 97832 04194 or visit our clinic on Piprali Road." },
+      { property: "og:title", content: "Contact Denta Proof Sikar" },
+      { property: "og:description", content: "Call +91 97832 04194 to schedule your visit with Denta Proof, Sikar." },
     ],
   }),
   component: Contact,
@@ -59,7 +59,7 @@ function Contact() {
           <p className="text-xs tracking-[0.25em] text-sand-deep">GET IN TOUCH</p>
           <h1 className="mt-2 font-serif text-5xl md:text-6xl">Book Your Appointment</h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            We'd love to see you. Reach out by phone, email, or drop by the hospital — we'll find a time that works.
+            We'd love to see you. Reach out by phone, email, or drop by the clinic — we'll find a time that works.
           </p>
         </div>
 
@@ -168,7 +168,7 @@ function Contact() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Ashirwad Dental Location"
+              title="Denta Proof Dental Hospital Location"
             />
           </div>
         </div>
