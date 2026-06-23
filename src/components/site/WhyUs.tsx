@@ -3,7 +3,7 @@ import clinic from "@/assets/clinic.jpg";
 const bullets = [
   { t: "Modern Equipment", d: "Digital X-rays, intra-oral cameras, and painless treatment technology." },
   { t: "Gentle, Caring Team", d: "We take time to listen and explain every step — no rushed appointments." },
-  { t: "Trusted in Sikar", d: "10+ years serving thousands of families across the region." },
+  { t: "Trusted in Raipur", d: "10+ years serving thousands of families across the region." },
   { t: "Transparent Pricing", d: "Clear estimates upfront. No surprises after treatment." },
 ];
 
@@ -11,7 +11,7 @@ export function WhyUs() {
   return (
     <section className="bg-cream px-6 py-24" id="about">
       <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-        <img src={clinic} alt="Denta Proof Sikar clinic interior" loading="lazy" width={1280} height={960} className="h-[480px] w-full rounded-3xl object-cover shadow-sm" />
+        <img src={clinic} alt="Denta Proof Raipur clinic interior" loading="lazy" width={1280} height={960} className="h-[480px] w-full rounded-3xl object-cover shadow-sm" />
         <div>
           <p className="text-xs tracking-[0.25em] text-sand-deep">ABOUT US</p>
           <h2 className="mt-2 font-serif text-4xl md:text-5xl">A Calm Place for Better Dentistry</h2>

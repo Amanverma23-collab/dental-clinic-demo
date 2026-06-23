@@ -11,12 +11,12 @@ export const Route = createFileRoute("/services/$slug")({
   },
   head: ({ loaderData }) => {
     const s = loaderData?.service;
-    if (!s) return { meta: [{ title: "Service — Denta Proof Sikar" }] };
+    if (!s) return { meta: [{ title: "Service — Denta Proof Raipur" }] };
     return {
       meta: [
-        { title: `${s.title} in Sikar — Denta Proof` },
+        { title: `${s.title} in Raipur — Denta Proof` },
         { name: "description", content: s.tagline },
-        { property: "og:title", content: `${s.title} — Denta Proof Sikar` },
+        { property: "og:title", content: `${s.title} — Denta Proof Raipur` },
         { property: "og:description", content: s.tagline },
         { property: "og:image", content: s.image },
       ],
@@ -154,7 +154,7 @@ function ServiceDetail() {
       <section className="px-6 py-20 text-center">
         <h2 className="font-serif text-4xl md:text-5xl">Ready to begin?</h2>
         <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          Book your consultation at Denta Proof, Sikar — call <a href="tel:9783204194" className="text-sand-deep">9783204194</a> or schedule online.
+          Book your consultation at Denta Proof, Raipur — call <a href="tel:9783204194" className="text-sand-deep">9783204194</a> or schedule online.
         </p>
         <Link to="/contact" className="mt-8 inline-block rounded-full bg-sand-deep px-8 py-4 text-xs tracking-[0.2em] text-white">
           BOOK APPOINTMENT

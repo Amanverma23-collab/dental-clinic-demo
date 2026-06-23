@@ -12,7 +12,7 @@ const googleReviews = [
     initial: "H",
     rating: 5,
     date: "2 weeks ago",
-    text: "Dentist Dr. Pawan is highly Skilled and professional, behaviour is also very Good 😊 Affordable Price … लूटपाट से दूर… Best Treatment available in Sikar …",
+    text: "Dentist Dr. Pawan is highly Skilled and professional, behaviour is also very Good 😊 Affordable Price … लूटपाट से दूर… Best Treatment available in Raipur …",
     avatarBg: "bg-gradient-to-tr from-amber-500 to-orange-400"
   },
   {
@@ -36,7 +36,7 @@ const googleReviews = [
     initial: "P",
     rating: 5,
     date: "5 months ago",
-    text: "The Best dental clinic in Sikar 🫡🫡",
+    text: "The Best dental clinic in Raipur 🫡🫡",
     avatarBg: "bg-gradient-to-tr from-rose-500 to-red-400"
   },
   {
@@ -178,7 +178,7 @@ export function Testimonials() {
           </div>
           
           <div className="mt-8 border-t border-sand-deep/20 pt-6 text-xs text-muted-foreground">
-            Trusted dental care and family-friendly procedures in Sikar.
+            Trusted dental care and family-friendly procedures in Raipur.
           </div>
         </div>
       </div>

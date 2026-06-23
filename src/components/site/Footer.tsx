@@ -7,12 +7,12 @@ export function Footer() {
         <div className="space-y-4">
           <div className="text-white"><Logo /></div>
           <p className="text-sm leading-relaxed text-white/60">
-            Creating confident & healthy smiles for the families of Sikar with modern dentistry and gentle care.
+            Creating confident & healthy smiles for the families of Raipur with modern dentistry and gentle care.
           </p>
         </div>
         <div>
           <h4 className="mb-4 font-serif text-xl text-white">Visit</h4>
-          <p className="text-sm leading-relaxed">Piprali Road<br/>Sikar, Rajasthan 332001</p>
+          <p className="text-sm leading-relaxed">Piprali Road<br/>Raipur, Rajasthan 332001</p>
         </div>
         <div>
           <h4 className="mb-4 font-serif text-xl text-white">Contact</h4>
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} Denta Proof Sikar · All rights reserved
+        © {new Date().getFullYear()} Denta Proof Raipur · All rights reserved
       </div>
     </footer>
   );

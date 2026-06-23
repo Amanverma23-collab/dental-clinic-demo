@@ -21,10 +21,10 @@ const servicesList = [
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Denta Proof Sikar — Book an Appointment" },
-      { name: "description", content: "Book your dental appointment in Sikar. Call +91 97832 04194 or visit our clinic on Piprali Road." },
-      { property: "og:title", content: "Contact Denta Proof Sikar" },
-      { property: "og:description", content: "Call +91 97832 04194 to schedule your visit with Denta Proof, Sikar." },
+      { title: "Contact Denta Proof Raipur — Book an Appointment" },
+      { name: "description", content: "Book your dental appointment in Raipur. Call +91 97832 04194 or visit our clinic on Piprali Road." },
+      { property: "og:title", content: "Contact Denta Proof Raipur" },
+      { property: "og:description", content: "Call +91 97832 04194 to schedule your visit with Denta Proof, Raipur." },
     ],
   }),
   component: Contact,
@@ -66,7 +66,7 @@ function Contact() {
         <div className="mx-auto mt-16 grid max-w-5xl gap-6 md:grid-cols-3">
           {[
             { t: "Call", d: "+91 97832 04194", href: "tel:9783204194" },
-            { t: "Visit", d: "Piprali Road, Sikar, Rajasthan 332001" },
+            { t: "Visit", d: "Piprali Road, Raipur, Rajasthan 332001" },
             { t: "Hours", d: "Mon – Sat · 9:00 AM – 8:00 PM" },
           ].map((c) => (
             <div key={c.t} className="rounded-2xl border border-border bg-white p-8 text-center">

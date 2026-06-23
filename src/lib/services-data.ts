@@ -29,9 +29,9 @@ export const services: Service[] = [
     tagline: "Custom smile makeovers tailored to your face & personality.",
     image: cosmetic,
     intro: [
-      "Our cosmetic dentistry program in Sikar combines digital smile design, high-grade ceramics, and an artist's eye to give you a smile that looks naturally yours — only better. We understand that a smile is a key part of your identity, which is why we customize every treatment plan to align perfectly with your facial features, skin tone, and personal expression.",
+      "Our cosmetic dentistry program in Raipur combines digital smile design, high-grade ceramics, and an artist's eye to give you a smile that looks naturally yours — only better. We understand that a smile is a key part of your identity, which is why we customize every treatment plan to align perfectly with your facial features, skin tone, and personal expression.",
       "Whether you are looking to fix small chips, close gaps, or completely redesign your smile, our modern solutions are minimally invasive and highly aesthetic. We utilize state-of-the-art materials like e.max veneers, zirconium crowns, and advanced bonding techniques to deliver durable, beautiful results.",
-      "At Denta Proof Sikar, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
+      "At Denta Proof Raipur, we prioritize your comfort and active involvement throughout the process. Through digital mock-ups and live previews, you can see and approve your potential new smile before any physical work begins, ensuring complete confidence in the final outcome."
     ],
     highlights: [
       { title: "Digital Smile Design", body: "See a 3D preview of your new smile before any treatment begins." },
@@ -132,7 +132,7 @@ export const services: Service[] = [
     intro: [
       "Clear aligners gently move teeth into their ideal position using a series of custom-printed, medical-grade plastic trays. They are virtually invisible, comfortable, and can be removed easily when eating, brushing, or attending special events.",
       "Using advanced 3D scanning technology, we create a precise digital model of your mouth. We then simulate the entire movement of your teeth, allowing you to see a step-by-step preview of your journey and your final smile before the treatment even begins.",
-      "Unlike traditional metal braces, clear aligners have no sharp wires or brackets, minimizing oral irritation. It is the perfect choice for busy teens and professionals in Sikar who want to enhance their smile discreetly and comfortably."
+      "Unlike traditional metal braces, clear aligners have no sharp wires or brackets, minimizing oral irritation. It is the perfect choice for busy teens and professionals in Raipur who want to enhance their smile discreetly and comfortably."
     ],
     highlights: [
       { title: "Removable Trays", body: "Take them out to eat, brush, and on special occasions." },
@@ -262,7 +262,7 @@ export const services: Service[] = [
     tagline: "Same-day relief for dental pain & accidents.",
     image: emergency,
     intro: [
-      "Dental emergencies can be stressful and painful. Whether you are dealing with a severe toothache, swelling, a fractured tooth, a knocked-out tooth, or a damaged restoration, our team in Sikar is prepared to provide same-day relief.",
+      "Dental emergencies can be stressful and painful. Whether you are dealing with a severe toothache, swelling, a fractured tooth, a knocked-out tooth, or a damaged restoration, our team in Raipur is prepared to provide same-day relief.",
       "We keep emergency time slots open in our daily schedule so that walk-in patients can be diagnosed and treated without long wait times. Our immediate priority is to manage your pain, stabilize the condition, and prevent further damage to your teeth and gums.",
       "If you experience a dental emergency, contact us immediately. We will guide you through crucial first-aid steps over the phone — such as how to preserve a knocked-out tooth — to ensure the best chance of saving your tooth upon arrival."
     ],

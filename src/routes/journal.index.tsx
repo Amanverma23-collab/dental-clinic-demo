@@ -7,10 +7,10 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/journal/")({
   head: () => ({
     meta: [
-      { title: "Journal — Denta Proof Sikar" },
-      { name: "description", content: "Dental tips, oral health guides, and clinic updates from Denta Proof in Sikar." },
-      { property: "og:title", content: "Journal — Denta Proof Sikar" },
-      { property: "og:description", content: "Dental tips, oral health guides, and clinic updates from Denta Proof in Sikar." },
+      { title: "Journal — Denta Proof Raipur" },
+      { name: "description", content: "Dental tips, oral health guides, and clinic updates from Denta Proof in Raipur." },
+      { property: "og:title", content: "Journal — Denta Proof Raipur" },
+      { property: "og:description", content: "Dental tips, oral health guides, and clinic updates from Denta Proof in Raipur." },
     ],
   }),
   component: JournalIndex,

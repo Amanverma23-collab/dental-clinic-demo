@@ -102,7 +102,7 @@ export const Logo = ({
           DENTA PROOF
         </div>
         {!compact && (
-          <div className="text-[10px] tracking-[0.3em] text-current opacity-70 mt-0.5">SIKAR · CLINIC</div>
+          <div className="text-[10px] tracking-[0.3em] text-current opacity-70 mt-0.5">RAIPUR · CLINIC</div>
         )}
       </div>
     </div>

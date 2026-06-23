@@ -3,7 +3,7 @@ import hero from "@/assets/hero.jpg";
 export function Hero() {
   return (
     <section className="relative h-[92vh] min-h-[640px] w-full overflow-hidden">
-      <img src={hero} alt="Denta Proof clinic operatory in Sikar" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
+      <img src={hero} alt="Denta Proof clinic operatory in Raipur" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/30" />
       <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 pt-24 text-center text-white">
         <h1 className="font-serif text-5xl leading-[1.05] md:text-7xl">
@@ -11,7 +11,7 @@ export function Hero() {
         </h1>
         <p className="mt-6 max-w-2xl text-base text-white/90 md:text-lg">
           Advanced dental care, cosmetic dentistry, teeth whitening, implants, and family dental
-          services delivered with precision and comfort — right here in Sikar.
+          services delivered with precision and comfort — right here in Raipur.
         </p>
         <a
           href="tel:9783204194"
