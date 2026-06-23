@@ -1,13 +1,15 @@
-import d1 from "@/assets/doctor1.jpg";
-import d2 from "@/assets/doctor2.jpg";
-import d3 from "@/assets/doctor3.jpg";
+import d1 from "@/assets/dr-pawan.jpg";
+import d2 from "@/assets/dr-naveen.jpg";
+import d3 from "@/assets/dr-poonam.jpg";
+import d4 from "@/assets/dr-aishwarya.jpg";
+import d5 from "@/assets/dr-sunil.jpg";
 
 const team = [
-  { img: d2, name: "Dr. Sunil Rulaniya", role: "MBBS, MD (Consultant Physician)" },
+  { img: d5, name: "Dr. Sunil Rulaniya", role: "MBBS, MD (Consultant Physician)" },
   { img: d2, name: "Dr. Naveen Kumar", role: "BDS, MDS (Orthodontics)" },
   { img: d3, name: "Dr. Poonam Jakhar", role: "BDS" },
-  { img: d1, name: "Dr. Aishwarya", role: "BDS" },
-  { img: d2, name: "Dr. Pawan K Jangir", role: "BDS" },
+  { img: d4, name: "Dr. Aishwarya", role: "BDS" },
+  { img: d1, name: "Dr. Pawan K Jangir", role: "BDS" },
 ];
 
 export function Doctors() {
